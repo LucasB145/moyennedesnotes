@@ -5,7 +5,7 @@ fun main(args: Array<String>) {
     var n = 2
 
     println("Case 1 : $grainderiz")
-    for(i in 2..64){
+    for (i in 2..64) {
         grainderiz = grainderiz.times(n.toBigInteger())
         println("Case $i : $grainderiz")
     }
