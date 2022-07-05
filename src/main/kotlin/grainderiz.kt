@@ -1,12 +1,15 @@
 import java.math.BigInteger
+import kotlin.math.pow
 
 fun main(args: Array<String>) {
-    var grainderiz = BigInteger.valueOf(1);
-    var n = 2
+    var grainderiz = BigInteger.ZERO
+    var total : BigInteger = BigInteger.ZERO
 
-    println("Case 1 : $grainderiz")
-    for (i in 2..64) {
-        grainderiz = grainderiz.times(n.toBigInteger())
+
+    for (i in 1..64) {
+        grainderiz = BigInteger.TWO.pow(i-1)
         println("Case $i : $grainderiz")
+        total += grainderiz
     }
+    println("Nombre de grain de riz total : $total")
 }
